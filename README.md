@@ -1,2 +1,6 @@
 # Test README
-Add the neccessary modules in requirements.txt
+This Directory contains two tasks details.
+
+TASK1 - docker-compose-dir
+
+TASK3 - minikube
