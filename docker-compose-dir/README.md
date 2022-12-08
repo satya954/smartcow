@@ -29,3 +29,5 @@ And Subpath /stats requests will pointed to the Backend application.
 To start this, run the command
 
     docker-compose up --build
+    
+Now check the application, with the Port 80.
