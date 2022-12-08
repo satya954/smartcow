@@ -1,0 +1,34 @@
+version: "3"
+services:
+  uwsgi:
+    restart: always
+    build: ./backend
+    hostname: uwsgi
+    container_name: uwsgi
+    ports:
+      - "8000:8000"
+    expose:
+      - 8000
+    volumes:
+      - db-data:/tmp
+  web:
+    restart: always
+    build: ./frontend
+    hostname: web
+    container_name: web
+    ports:
+      - "3000:3000"
+    links:
+      - uwsgi
+  nginx:
+    restart: always
+    build: ./nginx
+    ports:
+      - "80:80"
+    volumes:
+      - db-data:/tmp
+    depends_on:
+      - uwsgi
+      - web
+volumes:
+  db-data:
