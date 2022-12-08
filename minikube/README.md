@@ -10,10 +10,12 @@ After Initiating the minikube start command,
 Deploy the pods and services in each folders.
 
 POD1 refers to the Backend / UWSGI Flask application
+
       kubectl create -f pod1/deploy.yaml
       kubectl create -f pod1/service.yaml
 
 POD2 referes to the Frontend / NodeJS application.
+
       kubectl create -f pod2/deploy.yaml
       kubectl create -f pod2/service.yaml
 
