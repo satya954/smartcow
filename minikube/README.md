@@ -40,7 +40,9 @@ After Installing the Ingress controller, now install the ingress.yaml which is u
 Now Check the Minikube node IP, and check the URL from the minikube.
 
 In the Ingress,
+
 /  Points to the Nodejs application 
+
 /stats points to the Flask application.
 
 
