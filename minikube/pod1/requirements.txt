@@ -1,0 +1,9 @@
+psutil
+flask_cors
+click
+Flask
+itsdangerous
+Jinja2
+MarkupSafe
+uWSGI
+Werkzeug
